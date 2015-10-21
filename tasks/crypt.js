@@ -1,6 +1,6 @@
 var path = require('path')
   , fs = require('fs')
-  , kruptosUtilCrypt = require('../node_modules/kruptos/lib/kruptos-util-crypt');
+  , kruptosUtilCrypt = require('kruptos/lib/kruptos-util-crypt');
 
 function isFileAndNotInModules(file) {
   return file.indexOf('node_modules/') !== 0 && fs.lstatSync(file).isFile();
